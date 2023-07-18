@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: https://ogp.me/ns#">
+<html lang="FR-fr">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Nina Carducci, photographe professionnelle</title>
-	<meta name=description content="Bienvenue sur mon portfolio, je suis Nina Carducci et je suis photographe professionnelle. Vous pourrez voir dans ma galérie les différents moments que j'ai pu immortaliser grâce à mon expertise de la photographie. Si vous êtes interesser n'hésiter pas à me contacter via mes réseaux.">
-	<meta name="robots" content="index, follow">
+	<title>Nina Carducci, photographe professionnel</title>
+	<meta name="title" content="Nina Carducci">
+	<meta name="description" content="Bienvenue sur mon portfolio, je suis Nina Carducci et je suis photographe professionnel. Vous pourrez voir dans ma galérie les différents moments que j'ai pu immortaliser grâce à mon expertise de la photographie. Si vous êtes interesser n'hésiter pas à me contacter via mes réseaux.">
 	
-	<meta property="og:title" content="Nina Carducci, photographe professionnelle" />
+	<meta property="og:title" content="Nina Carducci, photographe professionnel" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://matthieu-simon.github.io/Nina-Carducci/" />
 	<meta property="og:image" content="" />
-	<meta property="og:description" content="Bienvenue sur mon portfolio, je suis Nina Carducci et je suis photographe professionnelle. Vous pourrez voir dans ma galérie les différents moments que j'ai pu immortaliser grâce à mon expertise de la photographie. Si vous êtes interesser n'hésiter pas à me contacter via mes réseaux." />
+	<meta property="og:description" content="Bienvenue sur mon portfolio, je suis Nina Carducci et je suis photographe professionnel. Vous pourrez voir dans ma galérie les différents moments que j'ai pu immortaliser grâce à mon expertise de la photographie. Si vous êtes interesser n'hésiter pas à me contacter via mes réseaux." />
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Nina Carducci, Photographe professionnel">
+	<meta property="og:description" content="Nina Carducci photographe professionnel">
+	<meta property="og:image" content="">
 	
 	<!-- Twitter -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content="Nina Carducci, photographe professionnelle" />
-	<meta name="twitter:creator" content="@NinaCarducci" />
-	<meta name="twitter:description" content="Bienvenue sur mon portfolio, je suis Nina Carducci et je suis photographe professionnelle. Vous pourrez voir dans ma galérie les différents moments que j'ai pu immortaliser grâce à mon expertise de la photographie. Si vous êtes interesser n'hésiter pas à me contacter via mes réseaux." />
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Nina Carducci, photographe professionnel" />
+	<meta property="twitter:url" content="">
+	<meta name="twitter:description" content="Bienvenue sur mon portfolio, je suis Nina Carducci et je suis photographe professionnel. Vous pourrez voir dans ma galérie les différents moments que j'ai pu immortaliser grâce à mon expertise de la photographie. Si vous êtes interesser n'hésiter pas à me contacter via mes réseaux." />
 	<meta name="twitter:image" content="" />
-
-	<meta itemprop=name content="Nina Carducci - Photographe" />
-	<meta itemprop=description content="Voici le portfolio de Nina Carducci, contenant une galerie de ses différents projets. Le site propose également ses services en photographie et leurs tarifs des différentes prestations." />
 	
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer />
 	<link rel="stylesheet" href="./assets/style.css" defer />
@@ -36,12 +40,26 @@
 	<script type="application/ld+json" defer>
 		{
 			"@context": "http://schema.org/",
-			"@type": "Person",
+			"@type": "LocalBusiness",
 			"name": "Nina Carducci",
 			"jobTitle": "Photograph",
-			"adress": "68 avenue Alsace-Lorraine, 33200 Bordeaux",
+			"adress": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"adressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"adressCountry": "France"
+			},
 			"telephone": "05 56 67 78 89",
-			"openingHours": "Monday-Friday 10:00-19:00",
+			"openingHours": {
+				"@type": "OpeningHoursSpecification",
+				"dayOfWeek": {
+					"@type" "DayOfWeek",
+					"name" : "Monday Tuesday Wednesday Thursday Friday"
+				},
+				"opens": "10:00",
+				"closes": "19:00"
+			},
 			"url": "https://matthieu-simon.github.io/Nina-Carducci/"
 		  }
 	</script>
@@ -55,7 +73,7 @@
 			<li><a href="#gallery">Galerie</a></li>
 			<li><a href="#services">Service</a></li>
 			<li><a href="#contact">Contact</a></li>
-			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/imagesResize/instagram.webp" alt="Icone Instagram" height="20" with="20"></a></li>
+			<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank"><img src="assets/imagesResize/instagram.webp" alt="Icone Instagram"></a></li>
 		</ul>
 	</nav>
 </header>
@@ -68,17 +86,17 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="./assets/imagesResize/slider/Ryoji/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Photo Ryoji Iwata" />
+				<img src="./assets/imagesResize/slider/Ryoji/ryoji-iwata-wuzjnov7t0g-unsplash.webp" class="d-block w-100" alt="Photo Ryoji Iwata">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/imagesResize/slider/Nicholas/nicholas-green-npz8akkumdi-unspl.webp" class="d-block w-100" alt="Photo Nicholas Green" 
+				<img src="./assets/img/slider/nicholas-green-nPz8akkUmDI-unsplash.jpg" class="d-block w-100" alt="Photo Nicholas Green"
 				srcset="./assets/imagesResize/slider/Nicholas/nicholas-green-desktop.webp 1024w,
-				/assets/imagesResize/slider/Nicholas/nicholas-green-mobile-S.webp 320w" />
+				/assets/imagesResize/slider/Nicholas/nicholas-green-mobile-S.webp 320w">
 			</div>
 			<div class="carousel-item">
-				<img src="./assets/imagesResize/slider/Edward/edward-cisneros-3_h6-1NPDGw-unsp.webp" class="d-block w-100" alt="Photo Edward Cisneros"
+				<img src="./assets/img/slider/edward-cisneros-3_h6-1NPDGw-unsplash.jpg" class="d-block w-100" alt="Photo Edward Cisneros"
 				srcset="./assets/imagesResize/slider/Edward/edward-cisneros-desktop.webp 1024w,
-				./assets/imagesResize/slider/Edward/edward-cisneros-mobile-S.webp 320w" />
+				./assets/imagesResize/slider/Edward/edward-cisneros-mobile-S.webp 320w">
 			</div>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -91,133 +109,159 @@
 		</button>
 	</div>
 </section>
-<section id="about">
-	<div class="picture left">
-		<img src="./assets/imagesResize/nina/nina.webp" alt="Photo Nina Carducci" srcset="./assets/imagesResize/nina/nina-desktop.webp 1024w,
-		./assets/imagesResize/nina/nina-mobile-S.webp 320w" />
-	</div>
-	<div id="about-me">
-		<h2 class="about-me__title">A propos de moi</h2>
-		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-		C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-	</div>
-</section>
-<section id="gallery">
-	<h2 class="title">Portfolio</h2>
-	<div class="container py-3">
-		<div class="gallery">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo Concert" srcset="./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-desktop.webp 1024w,
-			./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-tablette.webp 768w,
-			./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-mobile-S.webp 320w" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo Ali Morshedlou" srcset="./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-desktop.webp 1024w,
-			./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-tablette.webp 768w
-			./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-mobile-M.webp 375w
-			./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-mobile-S.webp 320w" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-tHO1_OuKbg0-unspla.webp" alt="Photo Jason Goodman" srcset="./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-desktop.webp 1024w,
-			./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-tablette.webp 768w,
-			./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-mobile-S.webp 320w" />
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-RvF2R_qMpRk-unspla.webp" alt="Photo Hannah Busing" srcset="./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-desktop.webp 1024w,
-			./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-tablette.webp 768w,
-			./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-mobile-S.webp 320w" />
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/imagesResize/gallery/portraits/Ade/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Photo Ade Tunji" srcset="./assets/imagesResize/gallery/portraits/Ade/ade-tunji-desktop.webp 1024w,
-			./assets/imagesResize/gallery/portraits/Ade/ade-tunji-tablette.webp 768w
-			./assets/imagesResize/gallery/portraits/Ade/ade-tunji-mobile-M.webp 375w
-			./assets/imagesResize/gallery/portraits/Ade/ade-tunji-mobile-S.webp 320w" />
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo Jakob Owens" srcset="./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-desktop.webp 1024w,
-			./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-tablette.webp 768w,
-			./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-mobile-S.webp 320w" />
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg--443cl1uR_8.webp" alt="Photo Nino Van Prattenburg" srcset="./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-desktop.webp 1024w,
-			./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-tablette.webp 768w,
-			./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-mobile-S.webp 320w" />
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/imagesResize/gallery/concerts/Austin/austin-neill-hgO1wFPXl3I-unsplas.webp" alt="Photo Austin Neill" 
-			srcset="./assets/imagesResize/gallery/concerts/Austin/austin-neill-desktop.webp 1024w,
-			./assets/imagesResize/gallery/concerts/Austin/austin-neill-tablette.webp 768w,
-			./assets/imagesResize/gallery/concerts/Austin/austin-neill-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/concerts/Austin/austin-neill-mobile-S.webp 320w" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/imagesResize/gallery/entreprise/Mateus/mateus-campos-felipe-Fsgzm8N0hIY.webp" alt="Photo Mateus Campos Felipe" srcset="./assets/imagesResize/gallery/entreprise/Mateus/mateus-desktop.webp 1024w,
-			./assets/imagesResize/gallery/entreprise/Mateus/mateus-tablette.webp 768w,
-			./assets/imagesResize/gallery/entreprise/Mateus/mateus-mobile-M.webp 375w,
-			./assets/imagesResize/gallery/entreprise/Mateus/mateus-mobile-S.webp 320w" />
+<main>
+	<section id="about">
+		<div class="picture left">
+			<img src="./assets/imagesResize/nina/nina.webp" alt="Photo Nina Carducci" />
 		</div>
-	</div>
-	<div class="quote">
+		<div id="about-me">
+			<h2 class="about-me__title">A propos de moi</h2>
+			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
+			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+		</div>
+	</section>
+	<section id="gallery">
+		<h2 class="title">Portfolio</h2>
+		<div class="container py-3">
+			<div class="gallery">
+
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt="Photo Concert"
+				srcset="
+				./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-desktop.webp 1024w,
+				./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-tablette.webp 768w,
+				./assets/imagesResize/gallery/concerts/Aaron/aaron-paul-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Photo Ali Morshedlou" srcset="
+				./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-desktop.webp 1024w,
+				./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-tablette.webp 768w
+				./assets/imagesResize/gallery/entreprise/Ali/ali-morshedlou-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-tHO1_OuKbg0-unspla.webp" alt="Photo Jason Goodman"
+				srcset="
+				./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-desktop.webp 1024w,
+				./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-tablette.webp 768w,
+				./assets/imagesResize/gallery/entreprise/Jason/jason-goodman-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-RvF2R_qMpRk-unspla.webp" alt="Photo Hannah Busing"
+				srcset="
+				./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-desktop.webp 1024w,
+				./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-tablette.webp 768w,
+				./assets/imagesResize/gallery/mariage/Hannah/hannah-busing-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/imagesResize/gallery/portraits/Ade/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt="Photo Ade Tunji"
+				srcset="
+				./assets/imagesResize/gallery/portraits/Ade/ade-tunji-desktop.webp 1024w,
+				./assets/imagesResize/gallery/portraits/Ade/ade-tunji-tablette.webp 768w
+				./assets/imagesResize/gallery/portraits/Ade/ade-tunji-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Photo Jakob Owens"
+				srcset="
+				./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-desktop.webp 1024w,
+				./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-tablette.webp 768w,
+				./assets/imagesResize/gallery/mariage/Jakob/jakob-owens-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg--443cl1uR_8.webp" alt="Photo Nino Van Prattenburg"
+				srcset="
+				./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-desktop.webp 1024w,
+				./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-tablette.webp 768w,
+				./assets/imagesResize/gallery/portraits/Nino/nino-van-prattenburg-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/imagesResize/gallery/concerts/Austin/austin-neill-hgO1wFPXl3I-unsplas.webp" alt="Photo Austin Neill"
+				srcset="
+				./assets/imagesResize/gallery/concerts/Austin/austin-neill-desktop.webp 1024w,
+				./assets/imagesResize/gallery/concerts/Austin/austin-neill-tablette.webp 768w,
+				./assets/imagesResize/gallery/concerts/Austin/austin-neill-mobile-S.webp 320w">
+
+				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/imagesResize/gallery/entreprise/Mateus/mateus-campos-felipe-Fsgzm8N0hIY.webp" alt="Photo Mateus Campos" 
+				srcset="
+				./assets/imagesResize/gallery/entreprise/Mateus/mateus-desktop.webp 1024w,
+				./assets/imagesResize/gallery/entreprise/Mateus/mateus-tablette.webp 768w,
+				./assets/imagesResize/gallery/entreprise/Mateus/mateus-mobile-S.webp 320w">
+			</div>
+		</div>
+		<div class="quote">
+			<figure>
+				<blockquote>
+					<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
+				</blockquote>
+				<figcaption class="quote__author">- Richard Avedon</figcaption>
+			</figure>
+		</div>
+	</section>
+	<section id="services">
+		<h2 class="title">Mes services</h2>
+		<div class="container">
+			<article class="service">
+				<div class="service__description">
+					<h3>Shooting photo</h3>
+					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				</div>
+				<div class="service__price">
+					<p>350€/demi journée</p>
+					<span>Matériel, déplacement inclus</span>
+				</div>
+
+			</article>
+			<article class="service">
+				<div class="service__description">
+					<h3>Retouches</h3>
+					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				</div>
+				<div class="service__price">
+					<p>50€/photo</p>
+					<span>2 AR par photo</span>
+				</div>
+			</article>
+			<article class="service">
+				<div class="service__description">
+					<h3>Album photos</h3>
+					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				</div>
+				<div class="service__price">
+					<p>400€ album A4</p>
+					<span>30 pages recto/verso</span>
+				</div>
+			</article>
+		</div>
+	</section>
+	<section class="quote">
 		<figure>
 			<blockquote>
-				<h2 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h2>
+				<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
 			</blockquote>
 			<figcaption class="quote__author">- Richard Avedon</figcaption>
 		</figure>
-	</div>
-</section>
-<section id="services">
-	<h2 class="title">Mes services</h2>
-	<div class="container">
-		<article class="service">
-			<div class="service__description">
-				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
-			</div>
-			<div class="service__price">
-				<h4>350€/demi journée</h4>
-				<span>Matériel, déplacement inclus</span>
-			</div>
-
-		</article>
-		<article class="service">
-			<div class="service__description">
-				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
-			</div>
-			<div class="service__price">
-				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
-			</div>
-		</article>
-		<article class="service">
-			<div class="service__description">
-				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
-			</div>
-			<div class="service__price">
-				<h4>400€ album A4</h4>
-				<span>30 pages recto/verso</span>
-			</div>
-		</article>
-	</div>
-</section>
-<section class="quote">
-	<figure>
-		<blockquote>
-			<h2 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
-		</blockquote>
-		<figcaption class="quote__author">- Richard Avedon</figcaption>
-	</figure>
-</section>
-<footer id="contact">
-	<section class="container">
-		<div class="form-container">
-			<h2>Une question ? Une demande de devis ?</h2>
-			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-			<form action="" method="post">
-				<label for="nom">Nom</label>
-				<input type="text" name="nom" id="nom">
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email">
-				<label for="message">Message</label>
-				<textarea name="message" id="message" cols="30" rows="10"></textarea>
-				<input type="submit" value="Envoyer"/>
-			</form>
-		</div>
-		<div class="picture right">
-			<img src="./assets/imagesResize/camera/camera.webp" alt="Photo Appareil Photo"/>
-		</div>
 	</section>
+	<section id="contact">
+		<section class="container">
+			<div class="form-container">
+				<h2>Une question ? Une demande de devis ?</h2>
+				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+				<form action="" method="post">
+					<label for="nom">Nom</label>
+					<input type="text" name="nom" id="nom">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+					<label for="message">Message</label>
+					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer"/>
+				</form>
+			</div>
+			<div class="picture right">
+				<img src="./assets/imagesResize/camera/camera.webp" alt="Photo Appareil Photo"/>
+			</div>
+		</section>
+	</section>
+</main>
+<footer>
+	<div>
+		<p>Nina Carducci</p>
+		<p>Photographe professionnel</p>
+		<p>68 avenue Alsace-Lorraine, 33000 Bordeaux</p>
+		<p>Tel: 05 56 67 78 89</p>
+		<p>©2023 - Tous droits réservés</p>
+	</div>
 </footer>
 </body>
 </html>
